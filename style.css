@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: #f5d000;
+}
+
+/* LOGO */
+.logo {
+  width: 60px;
+  height: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  border: 4px solid black;
+  background: black;
+  gap: 4px;
+}
+
+.cuadro {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+/* COLORES */
+.rojo { background: red; }
+.azul { background: blue; }
+.amarillo { background: yellow; }
+.blanco { background: white; }
+
+/* ANIMACIÓN HOVER */
+.logo:hover .rojo {
+  transform: translate(-3px, -3px);
+}
+
+.logo:hover .azul {
+  transform: translate(3px, -3px);
+}
+
+.logo:hover .amarillo {
+  transform: translate(-3px, 3px);
+}
+
+.logo:hover .blanco {
+  transform: translate(3px, 3px);
+}
+
+/* SECCIÓN CANVAS */
+#canvas-section {
+  background: linear-gradient(90deg, blue, red, green);
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* CONTENEDOR OBRA */
+.obra-container {
+  background: white;
+  padding: 40px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+}
+
+/* CANVAS */
+#canvas-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* DESCRIPCION */
+.canvas-descripcion{
+    padding: 100px 10%;
+    background-color: yellow;
+}
+
+.title-text{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: #f5d000;
+}
+
+/* INTEGRANTES */
+#Integrantes {
+    padding: 100px 10%;
+    background-color: #f5d000;
+    color: rgb(0, 0, 0);
+}
+
+.service-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.Alumna {
+    flex: 1 1 40%;
+    position: relative;
+    text-align: center;
+    max-width: 400px;
+}
+
+.Alumna img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.overlay { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),blue);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Alumna:hover .overlay { 
+    opacity: 1;
+}
+
+.descripcion h3 {
+    color: #f5d000(0, 0, 0);
+    font-size: 24px;
+}
+
+
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+  color: white;
+}
